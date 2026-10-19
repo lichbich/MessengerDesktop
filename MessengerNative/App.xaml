@@ -1,0 +1,21 @@
+<Application x:Class="MessengerNative.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:MessengerNative.Converters"
+             Startup="Application_Startup">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/ModernTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Global Converters -->
+            <converters:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
+            <converters:BoolToVisibilityConverter x:Key="InverseBoolToVisibility" Invert="True"/>
+            <converters:NullToVisibilityConverter x:Key="NullToVisibility"/>
+            <converters:MessageAlignmentConverter x:Key="MessageAlignment"/>
+            <converters:MessageBubbleBackgroundConverter x:Key="MessageBubbleBg"/>
+            <converters:MessageTextColorConverter x:Key="MessageTextColor"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

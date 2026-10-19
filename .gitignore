@@ -1,0 +1,23 @@
+## .NET / Visual Studio
+bin/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+
+## Release Output & Binaries (Over 100MB should be uploaded to GitHub Releases)
+Release-Output/
+Release/
+publish/
+
+## WebView2 Runtime User Data & Cache
+WebViewProfile/
+**/WebViewProfile/
+**/Cache/
+*.lock
+
+## Inno Setup Temporary Output
+Output/

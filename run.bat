@@ -1,0 +1,6 @@
+@echo off
+title Running Messenger Native...
+echo Starting Messenger Native...
+cd /d "%~dp0MessengerNative"
+dotnet run
+pause
